@@ -12,7 +12,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
     pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
     output: "export",
-    basePath: "/nextjs-github-pages",
+    basePath: "/testcicdop1",
     images: {
         unoptimized: true,
       },
