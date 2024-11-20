@@ -1,47 +1,82 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# **Build your portfolio with Once UI's Magic Portfolio**
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+**1. Clone the repository**
+```
+git clone https://github.com/once-ui-system/magic-portfolio.git
+```
 
-# Features
+**2. Install dependencies**
+```
+npm install
+```
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+**3. Run dev server**
+```
+npm run dev
+```
 
-# Getting Started Locally
+**4. Edit config**
+```
+src/app/resources/config
+```
 
-1. Clone this repository to your local machine:
+**5. Edit content**
+```
+src/app/resources/content (or content-i18n for localization)
+```
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+**6. Create blog posts / projects**
+```
+Add a new .mdx file to src/app/[locale]/blog/posts or src/app/[locale]/work/projects
+```
 
-2. Move to the cloned directory
+# **Features**
 
-   ```bash
-   cd portfolio
-   ```
+## **Once UI**
+- All tokens, components & features of [Once UI](https://once-ui.com)
 
-3. Install dependencies:
+## **SEO**
+- Automatic open-graph and X image generation with next/og
+- Automatic schema and metadata generation based on the content file
 
-   ```bash
-   pnpm install
-   ```
+## **Design**
+- Responsive layout optimized for all screen sizes
+- Timeless design without heavy animations and motion
+- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
 
-4. Start the local Server:
+## **Content**
+- Render sections conditionally based on the content file
+- Enable or disable pages for blog, work, gallery and about / CV
+- Generate and display social links automatically
+- Set up password protection for URLs
 
-   ```bash
-   pnpm dev
-   ```
+## **Localization (NEW)**
+- Magic Portfolio now supports localization with the next-intl library
+- See more info in resources/config.js
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+# **Authors**
 
-# License
+Connect with us on Threads or LinkedIn.
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
+Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
+
+Localization added by [François Hernandez](https://github.com/francoishernandez)
+
+# **Get involved**
+
+- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
+- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
+
+# **License**
+
+Distributed under the CC BY-NC 4.0 License.
+- Commercial usage is not allowed.
+- Attribution is required.
+
+See `LICENSE.txt` for more information.
+
+# **Deploy with Vercel**
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=https%3A%2F%2Fonce-ui.com%2Fimages%2Ftemplates%2Fmagic-portfolio%2Fcover.jpg)
